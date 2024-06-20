@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases System</title>
+    <link rel="icon" href="Logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div  class="w-75 m-auto shadow-lg p-5 my-5">
+        <h1 class="text-center fw-bolder ">الحالات</h1>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control border-0 border-bottom rounded-0" id="caseName" placeholder="enter name">
+            <label for="productName">الإسم</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control  border-0 border-bottom rounded-0" id="caseAge" placeholder="enter price">
+            <label for="productPrice">السن</label>
+        </div>
+        <div class="form-floating mb-3">
+            
+            <div class="form-floating mb-3">
+                <textarea  class="form-control" id="productDesc" placeholder="enter name" style="height: 100px;"></textarea>
+                <label for="productName">التفاصيل</label>
+            </div>
+        </div>
+        <button class="btn btn-info text-white rounded-0 " id="addBtn">Add</button>
+        <button class="btn btn-danger rounded-0" id="resetBtn">Reset</button>
+    </div>
+
+    <input type="text" id="search" oninput="search1()" placeholder="Search.." class="form-control w-50 m-auto my-5">
+    <div class="container">
+        <div class="row" id="rowBody">
+            
+        </div>
+    </div>
+    
+    
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
